@@ -1,10 +1,9 @@
-import DarkModeON from './components/DarkModeON'
 import Container from 'react-bootstrap/Container';
 import TextControlsExample from './components/TextControlsExample';
 import Darkmodenavbar from './components/Darkmodnavbar';
 import Alertmsg from './Alertmsg';
+import Imageuploder from './components/Imageuploder';
 import { useState } from 'react';
-
 
 
 function App() {
@@ -43,6 +42,7 @@ function App() {
      <Alertmsg alert={alert} />
      <TextControlsExample showAlert={showAlert} mode = {mode} heacding="Enter you name bellow" />
      {/* <DarkModeON /> */}
+     <Imageuploder />
      </Container>
     </>
   )
