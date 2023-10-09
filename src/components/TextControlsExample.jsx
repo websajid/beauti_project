@@ -4,8 +4,6 @@ import Form from 'react-bootstrap/Form';
   import { useState } from 'react';
 
 function TextControlsExample(props) {
-
-
 const [text, settext]= useState("")
 const handleclick=()=>{
   // settext("Zuber ki girlfreind meri lover h")
@@ -37,7 +35,7 @@ const recognition = new webkitSpeechRecognition();
 recognition.lang = "en-GB"
  recognition.onresult = function(event){
   console.log(event)
-  text = settext(event.results[0][0].transcript);
+   settext(event.results[0][0].transcript);
 }
 recognition.start();
 props.showAlert("Reconding start","success")
